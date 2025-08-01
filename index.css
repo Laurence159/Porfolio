@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0%;
+    animation: slideRight 1s ease forwards;
+    
+
+}
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #12f012;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 15px;
+}
+
+.nav ul li {
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+.nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0 .3s ease-in-out;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.1s * var(--i));
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+    color: #12f012;
+}
+
+.landing-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10% 0;
+}
+
+.landing-content h1 {
+    font-weight: bolder;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .1s;
+    
+}
+
+.landing-content h2 {
+    font-weight: 600;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.landing-content h1 span {
+    color: #12f012;
+    font-weight: 700;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.landing-content h3  {
+    font-weight: 700;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .1s;
+
+}
+
+
+.landing-content h3 span {
+    color: #12f012;
+    font-weight: 700;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .1s;
+
+}
+
+.landing-content p {
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.landing-image img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    border-radius: 15px;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 3s ease-in-out infinite;
+    animation-delay: .2s, 3s; 
+}
+
+.social-links a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #12f012;
+    font-size: 25px;
+    text-decoration: none;
+    color: #12f012;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .1s; 
+    animation-delay: calc(.1s * var(--i));  
+    
+}
+
+.social-links a:hover {
+    background: #12f012;
+    color: #000;
+    box-shadow: 0 0 20px #12f012;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #12f012;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #12f012;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .1s; 
+    animation-delay: .2s;  
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+
+}
+
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+
+}
+
+
+@keyframes slideTop {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+
+}
+
+
+@keyframes slideBottom {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes floatImage {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
