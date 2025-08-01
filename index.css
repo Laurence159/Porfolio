@@ -1,3 +1,27 @@
+@media (max-width: 480px) {
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets */
+}
+@media (min-width: 1025px) {
+  /* Styles for desktops */
+}
+/* Extra small (phones) */
+@media (max-width: 480px) {}
+
+/* Small devices (phones and phablets) */
+@media (max-width: 767px) {}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* Large devices (desktops) */
+@media (min-width: 1025px) {}
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -100,6 +124,7 @@ header {
     font-weight: 700;
     animation: slideRight 1s ease forwards;
     animation-delay: .1s;
+    
 }
 
 .landing-content h3  {
@@ -141,7 +166,7 @@ header {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
+    width: 40px; 
     height: 40px;
     margin: 0 10px;
     border-radius: 50%;
