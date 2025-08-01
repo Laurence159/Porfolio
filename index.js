@@ -8,8 +8,8 @@ var typed = new Typed(".multiple-text", {
 
 var typed = new Typed(".multiple-lname", {
       strings: ["Juames", "Caballes", "Sagadal", "Selorico"],
-      typeSpeed: 100,
-      backSpeed: 100,
+      typeSpeed: 50,
+      backSpeed: 50,
       backDelay: 1000,
       loop: true,
     });
