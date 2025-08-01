@@ -13,3 +13,4 @@ var typed = new Typed(".multiple-lname", {
       backDelay: 1000,
       loop: true,
     });
+
